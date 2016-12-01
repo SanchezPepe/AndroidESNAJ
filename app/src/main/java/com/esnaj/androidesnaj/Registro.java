@@ -19,7 +19,9 @@ public class Registro extends AppCompatActivity {
         List<String> spinnerArray =  new ArrayList<String>();
         spinnerArray.add("Pachón");
         spinnerArray.add("Peonina");
-        spinnerArray.add("Bonfill");
+        spinnerArray.add("Bonifacio");
+        spinnerArray.add("Bonfil");
+        spinnerArray.add("Pedro");
         spinnerArray.add("Anabella");
         spinnerArray.add("ReyESNAJ");
 
