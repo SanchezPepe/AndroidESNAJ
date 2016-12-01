@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView nuevo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     public void abreURL(String url){
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    public void registrar(View v){
+        Intent intent = new Intent(MainActivity.this, Registro.class);
         startActivity(intent);
     }
 }

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="AndroidESNAJ"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_registro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.esnaj.androidesnaj.MainActivity">
+    tools:context="com.esnaj.androidesnaj.Registro">
 
     <LinearLayout
         android:orientation="vertical"
@@ -21,42 +20,12 @@
         android:weightSum="1">
 
         <TextView
-            android:text="Bienvenido"
+            android:text="Nuevo registro"
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
             android:layout_marginBottom="15dp"/>
-
-        <TextView
-            android:text="Usuario"
-            android:textSize="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="15dp"
-            android:ems="10"
-            android:id="@+id/ETUsuario" />
-
-        <TextView
-            android:text="Contraseña"
-            android:textSize="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="15dp"
-            android:ems="10"
-            android:id="@+id/ETContraseña"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -82,35 +51,90 @@
                 android:layout_width="wrap_content" />
         </RadioGroup>
 
-        <Button
-            android:text="Login"
+        <TextView
+            android:text="Nombre"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:ems="10"
+            android:id="@+id/ETUsuario" />
+
+        <TextView
+            android:text="Correo"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:ems="10"
+            android:id="@+id/ETCorreo" />
+
+        <TextView
+            android:text="Contraseña"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:ems="10"
+            android:id="@+id/ETContraseña"/>
+
+        <TextView
+            android:text="Categoría"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView71" />
+
+
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/button" />
+            android:id="@+id/spinner"
+            android:layout_weight="0.11" />
 
         <TextView
-            android:text="¿Usuario nuevo?"
+            android:text="Escuela"
+            android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:id="@+id/textView8" />
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:ems="10"
+            android:id="@+id/ETEscuela"/>
+
+
 
         <Button
             android:text="Registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="registrar"
             android:layout_margin="17dp"
-            android:id="@+id/button2" />
+            android:id="@+id/BTRegistro" />
 
-        <Button
-            android:text="ESNAJ.COM"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:onClick="abreESNAJ"
-            android:id="@+id/button3" />
 
 
     </LinearLayout>
