@@ -52,8 +52,20 @@ public class InterfaceBD  {
         close();
     }
 
-    public void modificaAlumn(){
-
+    public void modificaAlumn(int i, String modf, int idAlumnos){
+        ContentValues valores;
+        open();
+        if(i == 1)
+            valores.put("nombre", modf);
+        else
+            if(i == 2)
+                valores.put("correo", modf);
+            else
+                if(i == 3)
+                    valores.put("contra", modf);
+                else
+                    if (i == 4)
+                        valores.put("puntosTotales", modf);
     }
     public void insertarDatosPrueba(){
         ContentValues valores;
