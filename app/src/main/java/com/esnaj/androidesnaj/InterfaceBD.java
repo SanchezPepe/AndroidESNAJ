@@ -116,25 +116,25 @@ public class InterfaceBD  {
         valores.put("contra", "fer");
         valores.put("puntosTotales", "120");
         valores.put("categoria", "Pedro");
-        valores.put("escuela", "");
+        valores.put("escuela", "Anahuac");
         db.insert("alumnos", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Enrique Contreras");
-        valores.put("correo", "luisecv76@hotmail.com");
-        valores.put("contra", "12345");
+        valores.put("nombe", "Isak Kats");
+        valores.put("correo", "kats@hotmail.com");
+        valores.put("contra", "kats");
         db.insert("maestros", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Enrique Contreras");
-        valores.put("correo", "luisecv76@hotmail.com");
-        valores.put("contra", "12345");
+        valores.put("nombe", "Ana Lidia");
+        valores.put("correo", "anaLidia@hotmail.com");
+        valores.put("contra", "anaLidia");
         db.insert("maestros", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Enrique Contreras");
-        valores.put("correo", "luisecv76@hotmail.com");
-        valores.put("contra", "12345");
+        valores.put("nombe", "Gonzalo Gonzales");
+        valores.put("correo", "gon@hotmail.com");
+        valores.put("contra", "gon");
         db.insert("maestros", null, valores);
         close();
     }
