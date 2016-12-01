@@ -5,8 +5,7 @@
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":app" />
       </configuration>
-    </facet>
-    <facet type="android" name="Android">
+    </facet><facet type="android" name="Android">
       <configuration>
         <option name="SELECTED_BUILD_VARIANT" value="debug" />
         <option name="SELECTED_TEST_ARTIFACT" value="_android_test_" />
