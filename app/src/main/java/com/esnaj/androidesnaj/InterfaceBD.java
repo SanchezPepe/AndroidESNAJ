@@ -161,4 +161,27 @@ public class InterfaceBD  {
         }
         return res;
     }
+
+    public Cursor inicioAlumno(String correo){
+        open();
+        String cadena = "Select idAlumnos, contra from alumnos where correo = " + correo;
+        Cursor res = db.rawQuery(cadena, null);
+        if(res.getCount() == 0){
+            insertarDatosPrueba();
+            res = db.rawQuery(cadena, null);
+        }
+        return res;
+    }
+
+    public Cursor inicioMaestro(String correo){
+        Cursor res = null;
+        open();
+        String cadena = "Select idMaestros from maestros where correo = " + correo;
+        res = db.rawQuery(cadena, null);
+        if(res.getCount() == 0){
+            insertarDatosPrueba();
+            res = db.rawQuery(cadena, null);
+        }
+        return res;
+    }
 }
