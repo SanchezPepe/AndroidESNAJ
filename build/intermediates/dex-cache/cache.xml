@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="1ccdc6e65e60f5326788106aa9dcf9ddeedc91bb">
+        sha1="6a87c193f73ff40de94d9a3bc1edfeb3a97d62fa">
         <dex dex="C:\Users\LPENAF\Desktop\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_db4e6f2ccbbbec3b89003e236cc2c98182412854\classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c7e30ee55cba2630d3b5fc3d9632511c2704dfa8">
+        sha1="730981ae4d4efd01838cb36796f0b85cf21c6cf2">
         <dex dex="C:\Users\LPENAF\Desktop\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bf4e8b9753ee739ae4a98514c9cd2322cd686f0f\classes.dex" />
     </item>
 
