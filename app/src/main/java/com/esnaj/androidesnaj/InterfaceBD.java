@@ -52,7 +52,9 @@ public class InterfaceBD  {
         close();
     }
 
-    public void modificaAlumn()
+    public void modificaAlumn(){
+
+    }
     public void insertarDatosPrueba(){
         ContentValues valores;
         open();
@@ -71,11 +73,10 @@ public class InterfaceBD  {
         close();
     }
 
-    public Cursor traerDatosAlumno(String ){
-        Cursor res = null;
+    public Cursor traerDatosAlumno(int i){
         open();
-        String cadena = "Select * from alumnos";
-        res = db.rawQuery(cadena, null);
+        String cadena = "Select * from alumnos where idAlumno = " + i;
+        Cursor res = db.rawQuery(cadena, null);
         if(res.getCount() == 0){
             insertarDatosPrueba();
             res = db.rawQuery(cadena, null);
@@ -83,10 +84,10 @@ public class InterfaceBD  {
         return res;
     }
 
-    public Cursor traerDatosMaestro(){
+    public Cursor traerDatosMaestro(int i){
         Cursor res = null;
         open();
-        String cadena = "Select *  from maestros";
+        String cadena = "Select *  from maestros where idMaestro = " + i;
         res = db.rawQuery(cadena, null);
         if(res.getCount() == 0){
             insertarDatosPrueba();
