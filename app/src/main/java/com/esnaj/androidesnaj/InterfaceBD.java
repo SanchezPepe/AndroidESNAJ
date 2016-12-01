@@ -53,7 +53,7 @@ public class InterfaceBD  {
     }
 
     public void modificaAlumn(int i, String modf, int idAlumnos){
-        ContentValues valores;
+        ContentValues valores = null;
         open();
         if(i == 1)
             valores.put("nombre", modf);
@@ -66,22 +66,76 @@ public class InterfaceBD  {
                 else
                     if (i == 4)
                         valores.put("puntosTotales", modf);
+                    else
+                        if(i==5)
+                            valores.put("categoria", modf);
+                        else
+                            valores.put("escuela", modf);
+        db.update("alumnos", valores,"idAlumnos = "+ idAlumnos, null);
+        close();
     }
+
+    public void modificaMaestr(int i, String modf, int idMaestros){
+        ContentValues valores = null;
+        open();
+        if(i == 1)
+            valores.put("nombre", modf);
+            else
+                if(i == 2)
+                    valores.put("correo", modf);
+                else
+                    valores.put("contra", modf);
+        db.update("alumnos", valores,"idMaestros = "+ idMaestros, null);
+        close();
+    }
+
     public void insertarDatosPrueba(){
         ContentValues valores;
         open();
         valores = new ContentValues();
-        valores.put("datos", "Hola");
-        db.insert("tavlaprueba", null, valores);
+        valores.put("nombe", "Enrique Contreras");
+        valores.put("correo", "luisecv76@hotmail.com");
+        valores.put("contra", "12345");
+        valores.put("puntosTotales", "-3");
+        valores.put("categoria", "Pachon");
+        valores.put("escuela", "ITAM");
+        db.insert("alumnos", null, valores);
+
         valores = new ContentValues();
-        valores.put("datos", "Adios");
-        db.insert("tavlaprueba", null, valores);
+        valores.put("nombe", "Jose de Jesus Sanchez");
+        valores.put("correo", "pepe@hotmail.com");
+        valores.put("contra", "pepe");
+        valores.put("puntosTotales", "80");
+        valores.put("categoria", "Rey ESNAJ");
+        valores.put("escuela", "Tec");
+        db.insert("alumnos", null, valores);
+
         valores = new ContentValues();
-        valores.put("datos", "luis");
-        db.insert("tavlaprueba", null, valores);
+        valores.put("nombe", "Fernando Peña");
+        valores.put("correo", "fer@hotmail.com");
+        valores.put("contra", "fer");
+        valores.put("puntosTotales", "120");
+        valores.put("categoria", "Pedro");
+        valores.put("escuela", "");
+        db.insert("alumnos", null, valores);
+
         valores = new ContentValues();
-        valores.put("datos", "ana");
-        db.insert("tavlaprueba", null, valores);
+        valores.put("nombe", "Enrique Contreras");
+        valores.put("correo", "luisecv76@hotmail.com");
+        valores.put("contra", "12345");
+        db.insert("maestros", null, valores);
+
+        valores = new ContentValues();
+        valores.put("nombe", "Enrique Contreras");
+        valores.put("correo", "luisecv76@hotmail.com");
+        valores.put("contra", "12345");
+        db.insert("maestros", null, valores);
+
+        valores = new ContentValues();
+        valores.put("nombe", "Enrique Contreras");
+        valores.put("correo", "luisecv76@hotmail.com");
+        valores.put("contra", "12345");
+        db.insert("maestros", null, valores);
         close();
     }
 
