@@ -1,7 +1,5 @@
 # AndroidESNAJ
 
-NO SUBAN PENDEJADAS
-
 ## Autores
 * **Fabian Orduña** [FabianOrduna](https://github.com/FabianOrduna)
 * **Fernando Peña** [lpenaf](https://github.com/lpenaf)
