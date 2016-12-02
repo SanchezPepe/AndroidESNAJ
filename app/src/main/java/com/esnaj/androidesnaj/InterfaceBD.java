@@ -17,6 +17,7 @@ public class InterfaceBD  {
     public InterfaceBD(Context context){
 
         con = new AdminSQLiteOpenHelper(context);
+        insertarDatosPrueba();
     }
 
     public void open() throws SQLiteException {
@@ -93,7 +94,7 @@ public class InterfaceBD  {
         ContentValues valores;
         open();
         valores = new ContentValues();
-        valores.put("nombe", "Enrique Contreras");
+        valores.put("nombre", "Enrique Contreras");
         valores.put("correo", "luisecv76@hotmail.com");
         valores.put("contra", "12345");
         valores.put("puntosTotales", "-3");
@@ -102,7 +103,7 @@ public class InterfaceBD  {
         db.insert("alumnos", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Jose de Jesus Sanchez");
+        valores.put("nombre", "Jose de Jesus Sanchez");
         valores.put("correo", "pepe@hotmail.com");
         valores.put("contra", "pepe");
         valores.put("puntosTotales", "80");
@@ -111,7 +112,7 @@ public class InterfaceBD  {
         db.insert("alumnos", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Fernando Peña");
+        valores.put("nombre", "Fernando Peña");
         valores.put("correo", "fer@hotmail.com");
         valores.put("contra", "fer");
         valores.put("puntosTotales", "120");
@@ -120,19 +121,19 @@ public class InterfaceBD  {
         db.insert("alumnos", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Isak Kats");
+        valores.put("nombre", "Isak Kats");
         valores.put("correo", "kats@hotmail.com");
         valores.put("contra", "kats");
         db.insert("maestros", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Ana Lidia");
+        valores.put("nombre", "Ana Lidia");
         valores.put("correo", "anaLidia@hotmail.com");
         valores.put("contra", "anaLidia");
         db.insert("maestros", null, valores);
 
         valores = new ContentValues();
-        valores.put("nombe", "Gonzalo Gonzales");
+        valores.put("nombre", "Gonzalo Gonzales");
         valores.put("correo", "gon@hotmail.com");
         valores.put("contra", "gon");
         db.insert("maestros", null, valores);
@@ -143,10 +144,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select * from alumnos where idAlumno = " + i;
         Cursor res = db.rawQuery(cadena, null);
-        if(res.getCount() == 0){
-            insertarDatosPrueba();
-            res = db.rawQuery(cadena, null);
-        }
         return res;
     }
 
@@ -166,10 +163,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select idAlumnos, contra from alumnos where correo = " + correo;
         Cursor res = db.rawQuery(cadena, null);
-        if(res.getCount() == 0){
-            insertarDatosPrueba();
-            res = db.rawQuery(cadena, null);
-        }
         return res;
     }
 
@@ -178,10 +171,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select idMaestros from maestros where correo = " + correo;
         res = db.rawQuery(cadena, null);
-        if(res.getCount() == 0){
-            insertarDatosPrueba();
-            res = db.rawQuery(cadena, null);
-        }
         return res;
     }
 }

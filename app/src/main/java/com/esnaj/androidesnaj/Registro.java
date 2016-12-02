@@ -24,7 +24,8 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        Toast.makeText(this, "Si se registrara como maestro no es necesario que llene escuela ni que seleccione una categoria", Toast.LENGTH_LONG);
+
+        Toast.makeText(this, "Si se registrara como maestro no es necesario que llene escuela ni que seleccione una categoria", Toast.LENGTH_LONG).show();
 
         nombre = (EditText) findViewById(R.id.ETUsuario);
         correo = (EditText) findViewById(R.id.ETCorreo);
@@ -34,9 +35,10 @@ public class Registro extends AppCompatActivity {
         categoria = (Spinner) findViewById(R.id.spinnerCat);
         alum = (RadioButton)findViewById(R.id.radioButton2);
         maest = (RadioButton)findViewById(R.id.radioButton);
+        db = new InterfaceBD(this);
 
         //Llenado Spinner Registro
-        List<String> spinnerArray =  new ArrayList<String>();
+        List<String> spinnerArray =  new ArrayList<String>(7);
         spinnerArray.add("Pachón");
         spinnerArray.add("Peonina");
         spinnerArray.add("Bonifacio");
@@ -53,41 +55,33 @@ public class Registro extends AppCompatActivity {
 
     }
 
-    public void registro(View v){
+    public void registrar(View v){
+        boolean vacioAL, vacioMa;
+        if(nombre.getText().toString().matches("") || correo.getText().toString().matches("") || contra1.getText().toString().matches("") || contra2.getText().toString().matches("") || escuela.getText().toString().matches(""))
+            vacioAL = true;
+        else
+            vacioAL = false;
 
-        Registro obj = new Registro();
-        if(contra1.getText().toString().equals(contra2.getText().toString())) {
-            if (alum.isChecked()) {
-                if(!obj.vacioAl())
+        if(nombre.getText().toString().matches("") && correo.getText().toString().matches("") && contra1.getText().toString().matches("") && contra2.getText().toString().matches(""))
+            vacioMa =  true;
+        else
+            vacioMa = false;
+
+        if (!alum.isChecked() && !maest.isChecked())
+            Toast.makeText(this,"Seleccione si es alumno o maestro", Toast.LENGTH_LONG).show();
+        else
+            if(alum.isChecked() && !vacioAL) {
+                if(contra1.getText().toString().equals(contra2.getText().toString()))
                     db.insertarAlumno(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString(), categoria.getSelectedItem().toString(), escuela.getText().toString());
                 else
-                    Toast.makeText(this, "Complete todos los datos", Toast.LENGTH_LONG);
+                    Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
             }else
-                if(maest.isChecked()) {
-                    if(!obj.vacioMa())
+                if(!vacioMa) {
+                    if(contra1.getText().toString().equals(contra2.getText().toString()))
                         db.insertarMaestro(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString());
                     else
-                        Toast.makeText(this, "Complete todos los datos", Toast.LENGTH_LONG);
+                        Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
                 }else
-                    Toast.makeText(this,"Seleccione si es alumno o maestro", Toast.LENGTH_LONG).show();
-        }else
-            Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
-
-    }
-
-    private boolean vacioAl(){
-
-        if(nombre.getText().toString().equals("") && correo.getText().toString().equals("") && contra1.getText().toString().equals("") && contra2.getText().toString().equals("") && escuela.getText().toString().equals(""))
-            return true;
-         else
-            return false;
-    }
-
-    private boolean vacioMa(){
-
-        if(nombre.getText().toString().equals("") && correo.getText().toString().equals("") && contra1.getText().toString().equals("") && contra2.getText().toString().equals(""))
-            return false;
-        else
-            return true;
+                    Toast.makeText(this, "Complete todos los datos", Toast.LENGTH_LONG);
     }
 }

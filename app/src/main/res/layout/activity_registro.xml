@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
             android:id="@+id/BTRegistro"
-            android:onClick="registro"/>
+            android:onClick="registrar"/>
 
 
 
