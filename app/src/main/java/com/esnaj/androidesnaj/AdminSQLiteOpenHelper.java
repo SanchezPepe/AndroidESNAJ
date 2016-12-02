@@ -10,8 +10,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
-    String Alumnos = "Create table if not exists alumnos(idAlumno int  IDENTITY(1,1) primary key, nombre varchar(50) not null, correo varchar(50), contra varchar(50) not null, puntosTotales float not null, categoria varchar(50) not null, escuela varchar(50) not null)";
-    String Maestros = "Create table if not exists maestros(idMaestro int IDENTITY(1,1) primary key, nombre varchar(50) not null, correo varchar(50) not null, contra varchar(50) not null)";
+    String Alumnos = "Create table if not exists alumnos(idAlumno INTEGER primary key AUTOINCREMENT, nombre varchar(50) not null, correo varchar(50), contra varchar(50) not null, puntosTotales float not null, categoria varchar(50) not null, escuela varchar(50) not null)";
+    String Maestros = "Create table if not exists maestros(idMaestro INTEGER primary key AUTOINCREMENT, nombre varchar(50) not null, correo varchar(50) not null, contra varchar(50) not null)";
 
 
     public AdminSQLiteOpenHelper(Context context) {

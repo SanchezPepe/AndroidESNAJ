@@ -29,7 +29,7 @@ public class FragmentoLista extends ListFragment {
                              Bundle savedInstanceState) {
         View v=super.onCreateView(inflater, container, savedInstanceState);
 
-        String []arregloColumnas={"_id","datos"};
+        String []arregloColumnas={"idAlumno","correo"};
         int []to={R.id.texto1,R.id.texto2};
         iBD=new InterfaceBD(this.getActivity());
 

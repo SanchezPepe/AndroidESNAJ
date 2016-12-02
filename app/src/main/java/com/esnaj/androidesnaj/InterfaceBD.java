@@ -17,7 +17,6 @@ public class InterfaceBD  {
     public InterfaceBD(Context context){
 
         con = new AdminSQLiteOpenHelper(context);
-        insertarDatosPrueba();
     }
 
     public void open() throws SQLiteException {
@@ -161,7 +160,7 @@ public class InterfaceBD  {
 
     public Cursor inicioAlumno(String correo){
         open();
-        String cadena = "Select idAlumnos, contra from alumnos where correo = " + correo;
+        String cadena = "Select idAlumno, contra from alumnos where correo = " + correo;
         Cursor res = db.rawQuery(cadena, null);
         return res;
     }
@@ -169,7 +168,7 @@ public class InterfaceBD  {
     public Cursor inicioMaestro(String correo){
         Cursor res = null;
         open();
-        String cadena = "Select idMaestros from maestros where correo = " + correo;
+        String cadena = "Select idMaestro from maestros where correo = " + correo;
         res = db.rawQuery(cadena, null);
         return res;
     }
