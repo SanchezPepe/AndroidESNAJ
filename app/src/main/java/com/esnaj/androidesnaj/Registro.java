@@ -68,13 +68,13 @@ public class Registro extends AppCompatActivity {
             vacioMa = false;
 
         if (!alum.isChecked() && !maest.isChecked())
-            Toast.makeText(this,"Seleccione si es alumno o maestro", Toast.LENGTH_LONG).show();
+            mensaje("Seleccione Alumno o Maestro");
         else
             if(alum.isChecked() && !vacioAL) {
                 if(contra1.getText().toString().equals(contra2.getText().toString()))
                     db.insertarAlumno(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString(), categoria.getSelectedItem().toString(), escuela.getText().toString());
                 else
-                    Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
+                    mensaje("Las contraseñas no coinciden");
             }else
                 if(!vacioMa) {
                     if(contra1.getText().toString().equals(contra2.getText().toString()))
@@ -83,5 +83,9 @@ public class Registro extends AppCompatActivity {
                         Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
                 }else
                     Toast.makeText(this, "Complete todos los datos", Toast.LENGTH_LONG);
+    }
+
+    public void mensaje(String s){
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 }

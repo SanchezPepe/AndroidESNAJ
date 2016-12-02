@@ -41,7 +41,7 @@
             android:inputType="text"
             android:textSize="15dp"
             android:ems="10"
-            android:id="@+id/ETUsuario" />
+            android:id="@+id/ETUsuarioL" />
 
         <TextView
             android:text="Contraseña"
@@ -56,7 +56,7 @@
             android:inputType="textPassword"
             android:textSize="15dp"
             android:ems="10"
-            android:id="@+id/ETContraseña"/>
+            android:id="@+id/ETContraseñaL"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:onClick="login"
+            android:onClick="iniciarSesion"
             android:id="@+id/button" />
 
         <TextView

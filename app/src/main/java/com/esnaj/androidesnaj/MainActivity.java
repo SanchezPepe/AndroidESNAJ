@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View v){
         Cursor res;
-        correo = (EditText)findViewById(R.id.ETUsuario);
-        pass = (EditText)findViewById(R.id.ETContraseña);
+        correo = (EditText)findViewById(R.id.ETUsuarioL);
+        pass = (EditText)findViewById(R.id.ETContraseñaL);
         String mail = correo.getText().toString();
         String contra =  pass.getText().toString();
         if(!alumno.isChecked() && !maestro.isChecked())
