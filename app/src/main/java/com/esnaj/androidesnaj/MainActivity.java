@@ -2,15 +2,12 @@ package com.esnaj.androidesnaj;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,8 +41,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void iniciarSesion(View v){
-        Intent intent = new Intent(MainActivity.this, PerfilAlumno.class);
+    public void iniciarSesionM(View v, Bundle b){
+        Intent intent = new Intent(MainActivity.this, FragmentoListaM.class);
+        intent.putExtras(b);
         startActivity(intent);
     }
 
@@ -54,35 +52,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View v){
-        Cursor res;
+        Bundle b = new Bundle();
+        Cursor res = null;
         correo = (EditText)findViewById(R.id.ETUsuarioL);
         pass = (EditText)findViewById(R.id.ETContraseñaL);
-        String mail = correo.getText().toString();
-        String contra =  pass.getText().toString();
         if(!alumno.isChecked() && !maestro.isChecked())
             mensaje("No se seleccionó nada");
         else {
-            if (alumno.isChecked()){
-                res = IBD.inicioAlumno(mail);
-                if(res.getCount() == 0)
-                    mensaje("No está registrado");
-                else
-                    if (contra.equals(res.getString(1)))
-                        iniciarSesion(v);
-                    else
-                        mensaje("Contraseña incorrecta");
-            }
-            else { //ES MAESTRO
-                res = IBD.inicioMaestro(mail);
-                if(res.getCount() == 0)
-                    mensaje("No está registrado");
-                else
-                    if(contra.equals(res.getString(1)))
-                        iniciarSesion(v);
-                    else
-                        mensaje("Contraseña incorrecta");
-            }
+            if (alumno.isChecked())
+                res = IBD.inicioAlumno(correo.getText().toString());
+            else
+                res = IBD.inicioMaestro(correo.getText().toString());
         }
+        if(res.getCount() != 0){
+            res.moveToFirst();
+            int iD = res.getInt(0);
+            String contra = res.getString(1);
+            if(contra.equals(pass.getText().toString())){
+                b.putInt("Clave", iD);
+                mensaje("Bienvenido");
+                iniciarSesionM(v, b);
+            }
+            else
+                mensaje("Contraseña/Usuario incorrecta");
+        }else
+            mensaje("Cuenta no-válida");
     }
 
 }
