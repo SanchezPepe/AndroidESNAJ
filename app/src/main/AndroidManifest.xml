@@ -19,7 +19,8 @@
         <activity android:name=".PerfilAlumno" />
         <activity android:name=".PerfilMaestro" />
         <activity android:name=".ModificaAlum" />
-        <activity android:name=".ModificaMaes"></activity>
+        <activity android:name=".ModificaMaes"/>
+        <activity android:name=".BajaAlumnos"></activity>
     </application>
 
 </manifest>
