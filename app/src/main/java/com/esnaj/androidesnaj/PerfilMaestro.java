@@ -43,6 +43,11 @@ public class PerfilMaestro extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void eliminaAl(View v){
+        Intent i = new Intent(PerfilMaestro.this, BajaAlumnos.class);
+        startActivity(i);
+    }
+
 
 
 }

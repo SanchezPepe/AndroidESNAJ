@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_a406e88d2e015fdfdaf1a0f8452b4bfac775ce05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -43,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="58c52bd8ed49651cd61a72aed6c01c52d2965b7c">
+        sha1="a9244ff222699534e35f085a1426b62f4bb0dfc4">
         <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_33c3877f3ab5b7f49a5b8a6f1fd88b8ce3fc15b1\classes.dex" />
     </item>
     <item
@@ -52,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c60c6c8c8571663fd295590276da84afcf555a5c">
+        sha1="a82ce9ddccecb97607cfaf745db362977d9b6ab0">
         <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7d347baf5b4c3a98ef6d2d832b7232bedb2fb829\classes.dex" />
     </item>
     <item

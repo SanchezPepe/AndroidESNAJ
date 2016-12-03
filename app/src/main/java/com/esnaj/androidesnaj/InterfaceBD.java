@@ -58,7 +58,7 @@ public class InterfaceBD  {
         close();
     }
 
-    public void modificaAlumn(int i, String modf, int idAlumnos){
+    public void modificaAlumn(int i, String modf, int id){
         ContentValues valores = null;
         open();
         if(i == 1)
@@ -77,7 +77,7 @@ public class InterfaceBD  {
                             valores.put("categoria", modf);
                         else
                             valores.put("escuela", modf);
-        db.update("alumnos", valores,"idAlumnos = "+ idAlumnos, null);
+        db.update("alumnos", valores,"_id = "+ id, null);
         close();
     }
 
@@ -91,7 +91,7 @@ public class InterfaceBD  {
                     valores.put("correo", modf);
                 else
                     valores.put("contra", modf);
-        db.update("alumnos", valores,"idMaestros = "+ idMaestros, null);
+        db.update("alumnos", valores,"_id = "+ idMaestros, null);
         close();
     }
 
@@ -147,7 +147,7 @@ public class InterfaceBD  {
 
     public Cursor traerDatosAlumno(int i){
         open();
-        String cadena = "Select * from alumnos where idAlumno = " + i;
+        String cadena = "Select * from alumnos where _id = " + i;
         Cursor res = db.rawQuery(cadena, null);
         return res;
     }
@@ -155,7 +155,7 @@ public class InterfaceBD  {
     public Cursor traerDatosMaestro(int i){
         Cursor res = null;
         open();
-        String cadena = "Select *  from maestros where idMaestro = " + i;
+        String cadena = "Select *  from maestros where _id = " + i;
         res = db.rawQuery(cadena, null);
         return res;
     }
@@ -163,7 +163,7 @@ public class InterfaceBD  {
     public Cursor traerInfoMaestro(int i){
         Cursor res = null;
         open();
-        String cad = "SELECT idMaestro, nombre, correo FROM maestros WHERE idMaestro = " + i;
+        String cad = "SELECT _id, nombre, correo FROM maestros WHERE _id = " + i;
         res = db.rawQuery(cad, null);
         return res;
     }
@@ -171,14 +171,14 @@ public class InterfaceBD  {
     public Cursor traerInfoAlumno(int i){
         Cursor res = null;
         open();
-        String cad = "SELECT idAlumno, nombre, correo, puntosTotales, categoria, escuela FROM alumnos WHERE idAlumno = " + i;
+        String cad = "SELECT _id, nombre, correo, puntosTotales, categoria, escuela FROM alumnos WHERE _id = " + i;
         res = db.rawQuery(cad, null);
         return res;
     }
 
     public Cursor inicioAlumno(String correo){
         open();
-        String cadena = "Select idAlumno, contra from alumnos where correo like '" + correo +"'";
+        String cadena = "Select _id, contra from alumnos where correo like '" + correo +"'";
         Cursor res = db.rawQuery(cadena, null);
         return res;
     }
@@ -186,7 +186,7 @@ public class InterfaceBD  {
     public Cursor inicioMaestro(String correo){
         Cursor res = null;
         open();
-        String cadena = "Select idMaestro, contra from maestros where correo like '" + correo + "'";
+        String cadena = "Select _id, contra from maestros where correo like '" + correo + "'";
         res = db.rawQuery(cadena, null);
         return res;
     }
@@ -194,8 +194,14 @@ public class InterfaceBD  {
     public Cursor traerTodosA(){
         Cursor res = null;
         open();
-        String cad = "SELECT nombre, puntosTotales, escuela FROM alumnos";
+        String cad = "SELECT _id, nombre, puntosTotales, escuela FROM alumnos";
         res = db.rawQuery(cad, null);
+        return res;
+    }
+
+    public int eliminaAl(int id) {
+        int res = db.delete("alumnos", "_id = " + id, null);
+        db.close();
         return res;
     }
 }
