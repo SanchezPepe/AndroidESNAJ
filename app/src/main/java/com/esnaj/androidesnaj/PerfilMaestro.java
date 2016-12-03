@@ -38,6 +38,11 @@ public class PerfilMaestro extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void modifica(View v){
+        Intent i = new Intent(PerfilMaestro.this, ModificaMaes.class);
+        startActivity(i);
+    }
+
 
 
 }
