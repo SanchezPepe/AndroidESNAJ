@@ -17,6 +17,16 @@ public class InterfaceBD  {
     public InterfaceBD(Context context){
 
         con = new AdminSQLiteOpenHelper(context);
+        open();
+        Cursor res = db.rawQuery("Select *  from alumnos", null);
+        if(res.getCount() == 0){
+            insertarDatosPrueba();;
+        }
+
+        res = db.rawQuery("Select *  from maestros", null);
+        if(res.getCount() == 0){
+            insertarDatosPrueba();;
+        }
     }
 
     public void open() throws SQLiteException {
@@ -143,6 +153,7 @@ public class InterfaceBD  {
         open();
         String cadena = "Select * from alumnos where idAlumno = " + i;
         Cursor res = db.rawQuery(cadena, null);
+        close();
         return res;
     }
 
@@ -151,25 +162,24 @@ public class InterfaceBD  {
         open();
         String cadena = "Select *  from maestros where idMaestro = " + i;
         res = db.rawQuery(cadena, null);
-        if(res.getCount() == 0){
-            insertarDatosPrueba();
-            res = db.rawQuery(cadena, null);
-        }
+        close();
         return res;
     }
 
     public Cursor inicioAlumno(String correo){
         open();
-        String cadena = "Select idAlumno, contra from alumnos where correo = " + correo;
+        String cadena = "Select idAlumno, contra from alumnos where correo like '" + correo +"'";
         Cursor res = db.rawQuery(cadena, null);
+        close();
         return res;
     }
 
     public Cursor inicioMaestro(String correo){
         Cursor res = null;
         open();
-        String cadena = "Select idMaestro from maestros where correo = " + correo;
+        String cadena = "Select idMaestro, contra from maestros where correo like '" + correo + "'";
         res = db.rawQuery(cadena, null);
+        close();
         return res;
     }
 }
