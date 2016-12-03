@@ -1,5 +1,6 @@
 package com.esnaj.androidesnaj;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,7 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        Toast.makeText(this, "Si se registrara como maestro no es necesario que llene escuela ni que seleccione una categoria", Toast.LENGTH_LONG).show();
+        mensaje("Si es maestro no es necesario llenar escuela ni categoría");
 
         nombre = (EditText) findViewById(R.id.ETUsuario);
         correo = (EditText) findViewById(R.id.ETCorreo);
@@ -61,28 +62,38 @@ public class Registro extends AppCompatActivity {
             vacioAL = true;
         else
             vacioAL = false;
-
-        if(nombre.getText().toString().matches("") && correo.getText().toString().matches("") && contra1.getText().toString().matches("") && contra2.getText().toString().matches(""))
+        if(nombre.getText().toString().matches("") || correo.getText().toString().matches("") || contra1.getText().toString().matches("") || contra2.getText().toString().matches(""))
             vacioMa =  true;
         else
             vacioMa = false;
-
         if (!alum.isChecked() && !maest.isChecked())
-            mensaje("Seleccione Alumno o Maestro");
-        else
-            if(alum.isChecked() && !vacioAL) {
-                if(contra1.getText().toString().equals(contra2.getText().toString()))
+            mensaje("Seleccione alumno o maestro");
+        else {
+            if (alum.isChecked() && !vacioAL) {
+                if (contra1.getText().toString().equals(contra2.getText().toString())) {
                     db.insertarAlumno(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString(), categoria.getSelectedItem().toString(), escuela.getText().toString());
-                else
+                    mensaje("Alumno registrado");
+                    Intent intent = new Intent(Registro.this, MainActivity.class);
+                    startActivity(intent);
+                } else {
                     mensaje("Las contraseñas no coinciden");
-            }else
-                if(!vacioMa) {
-                    if(contra1.getText().toString().equals(contra2.getText().toString()))
-                        db.insertarMaestro(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString());
-                    else
-                        Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_LONG).show();
-                }else
-                    Toast.makeText(this, "Complete todos los datos", Toast.LENGTH_LONG);
+                    contra1.setText("");
+                    contra2.setText("");
+                }
+            } else if (maest.isChecked() && !vacioMa) {
+                if (contra1.getText().toString().equals(contra2.getText().toString())) {
+                    db.insertarMaestro(nombre.getText().toString(), correo.getText().toString(), contra1.getText().toString());
+                    mensaje("Maestro registrado");
+                    Intent intent = new Intent(Registro.this, MainActivity.class);
+                    startActivity(intent);
+                } else {
+                    mensaje("Las contraseñas no coinciden");
+                    contra1.setText("");
+                    contra2.setText("");
+                }
+            } else
+                mensaje("Completar todos los datos");
+        }
     }
 
     public void mensaje(String s){
