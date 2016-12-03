@@ -22,6 +22,7 @@
 
         <TextView
             android:text="Bienvenido"
+            android:gravity="center"
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +30,7 @@
             android:layout_marginBottom="15dp"/>
 
         <TextView
-            android:text="Usuario"
+            android:text="Correo"
             android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="17dp"
+            android:gravity="center"
             android:id="@+id/textView8" />
 
         <Button
@@ -106,6 +108,14 @@
             android:onClick="registrar"
             android:layout_margin="17dp"
             android:id="@+id/button2" />
+
+        <TextView
+            android:text="La ESNAJ en línea"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
 
         <Button
             android:text="ESNAJ.COM"

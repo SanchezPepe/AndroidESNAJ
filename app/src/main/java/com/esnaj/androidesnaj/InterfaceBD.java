@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
+import android.widget.Toast;
 
 /**
  * Created by enrique on 30/11/16.
@@ -153,7 +154,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select * from alumnos where idAlumno = " + i;
         Cursor res = db.rawQuery(cadena, null);
-        close();
         return res;
     }
 
@@ -162,7 +162,22 @@ public class InterfaceBD  {
         open();
         String cadena = "Select *  from maestros where idMaestro = " + i;
         res = db.rawQuery(cadena, null);
-        close();
+        return res;
+    }
+
+    public Cursor traerInfoMaestro(int i){
+        Cursor res = null;
+        open();
+        String cad = "SELECT idMaestro, nombre, correo FROM maestros WHERE idMaestro = " + i;
+        res = db.rawQuery(cad, null);
+        return res;
+    }
+
+    public Cursor traerInfoAlumno(int i){
+        Cursor res = null;
+        open();
+        String cad = "SELECT idAlumno, nombre, correo, puntosTotales, categoria, escuela FROM alumnos WHERE idAlumno = " + i;
+        res = db.rawQuery(cad, null);
         return res;
     }
 
@@ -170,7 +185,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select idAlumno, contra from alumnos where correo like '" + correo +"'";
         Cursor res = db.rawQuery(cadena, null);
-        close();
         return res;
     }
 
@@ -179,7 +193,6 @@ public class InterfaceBD  {
         open();
         String cadena = "Select idMaestro, contra from maestros where correo like '" + correo + "'";
         res = db.rawQuery(cadena, null);
-        close();
         return res;
     }
 }
