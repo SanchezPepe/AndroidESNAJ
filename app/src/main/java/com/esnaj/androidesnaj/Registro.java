@@ -75,6 +75,7 @@ public class Registro extends AppCompatActivity {
                     mensaje("Alumno registrado");
                     Intent intent = new Intent(Registro.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     mensaje("Las contraseñas no coinciden");
                     contra1.setText("");
@@ -86,6 +87,7 @@ public class Registro extends AppCompatActivity {
                     mensaje("Maestro registrado");
                     Intent intent = new Intent(Registro.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     mensaje("Las contraseñas no coinciden");
                     contra1.setText("");

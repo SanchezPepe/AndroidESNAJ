@@ -42,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarSesionM(View v, Bundle b){
-        Intent intent = new Intent(MainActivity.this, FragmentoListaM.class);
+        Intent intent = new Intent(MainActivity.this, PerfilMaestro.class);
+        intent.putExtras(b);
+        startActivity(intent);
+    }
+
+    public void iniciarSesionA(View v, Bundle b){
+        Intent intent = new Intent(MainActivity.this, PerfilAlumno.class);
         intent.putExtras(b);
         startActivity(intent);
     }
@@ -53,25 +59,34 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View v){
         Bundle b = new Bundle();
+        boolean alum = false;
         Cursor res = null;
         correo = (EditText)findViewById(R.id.ETUsuarioL);
         pass = (EditText)findViewById(R.id.ETContraseñaL);
-        if(!alumno.isChecked() && !maestro.isChecked())
+        if(!alumno.isChecked() && !maestro.isChecked()) {
             mensaje("No se seleccionó nada");
+            return;
+        }
         else {
-            if (alumno.isChecked())
+            if (alumno.isChecked()) {
                 res = IBD.inicioAlumno(correo.getText().toString());
+                alum = true;
+            }
             else
                 res = IBD.inicioMaestro(correo.getText().toString());
         }
-        if(res.getCount() != 0){
+        if(res != null && res.getCount() != 0){
             res.moveToFirst();
             int iD = res.getInt(0);
             String contra = res.getString(1);
             if(contra.equals(pass.getText().toString())){
                 b.putInt("Clave", iD);
-                mensaje("Bienvenido");
-                iniciarSesionM(v, b);
+                mensaje("Acceso correcto");
+                finish();
+                if(alum)
+                    iniciarSesionA(v, b);
+                else
+                    iniciarSesionM(v, b);
             }
             else
                 mensaje("Contraseña/Usuario incorrecta");

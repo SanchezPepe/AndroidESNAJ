@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".Registro" />
         <activity android:name=".PerfilAlumno" />
-        <activity android:name=".PerfilMaestro"></activity>
+        <activity android:name=".PerfilMaestro" />
+        <activity android:name=".ModificaAlum" />
+        <activity android:name=".ModificaMaes"></activity>
     </application>
 
 </manifest>

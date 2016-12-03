@@ -3,156 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_2ef5f713a454873f51f9bc326db1607ad76c9638/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_bc0571cd9df2ce6cd75be456321d64ab83d65b9d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_b4b5cab2213f319f2b6a63ded8f2f05be00ac127/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_e39e9c82d931a3727488a982ae82962c8c8e9a17/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_0eb8dad90ba2f9c497d8aef62e5bccf6317470fe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0f9a50abbc1944dd8ede4663148ff8b7e10ff893/classes.dex" />
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_cb6eb326cf7b19720377bb3851d25c43ac04f076\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_33c493dccdeec46a6d055257619b26e43bcf82d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_464aa191e26e6b40ff1af5f1d70c40796ae20ce8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_90482dc6cca455bbdbb37443c5179e0197de9e78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_347016e915180d3e0eab059d49118b97c98683b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_91856d338cbbecb5f298792efd865565b5464388/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bdbe79afb12b194dc4042df124f403e493850882/classes.dex" />
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_21922c2567495dbd10f81742a611032c0141b186\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="057f08d29e50ab9e075bfe5df138ea7708a86728">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b6fb8d642ef720a1676e4d8ea8db0dd6620fe6c6/classes.dex" />
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_88d2143c42ae1365a463f611460ddc4d24c631b6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_6a4c422a2ade5c8365c59a0d8a61df8d0f432ea4/classes.dex" />
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_84f940f3c6037bb100517806dd41721d07e483b5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="0a4d3d83a6e61758f5bc8511726d5d03fb95ed61">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dce6c4671563d6ca6e3568b269cc7ddf88572944/classes.dex" />
+        sha1="58c52bd8ed49651cd61a72aed6c01c52d2965b7c">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_33c3877f3ab5b7f49a5b8a6f1fd88b8ce3fc15b1\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_09931f5149604454f1af0f201b248ecf1d97c1a5/classes.dex" />
+        sha1="c60c6c8c8571663fd295590276da84afcf555a5c">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7d347baf5b4c3a98ef6d2d832b7232bedb2fb829\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_71370b5ae80a70c97fd933ac9e2209d2171b919b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ecdebeb6579e7ce1931cb59d11cc0c1a55b97fcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_49660f685245cb39e7dbcb1712a5cf1ff6d6c123\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/enrique/AndroidStudioProjects/GitDAE/AndroidESNAJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_72b7cb7f4e9cbe7777ffdba58a9dff1c024ff762/classes.dex" />
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_3cc05529626d98dbc6279f176c729a82b4ee55dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_9b34b4f2d64faba0c3721126ee47db214f47b545\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_15bfbb0f20352039ea0b966fb77594ada1592417\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_6baf2eb5027de66f8f06f84309ac3631c7d492a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_b6d7195613229386f997c5104898ef673b8e5a51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d3dca3d24992a0687d3ac581585d474840a5dd15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_885bdc140f8aef3ffa6137877c79ab0a89ab13ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pepe\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_735fb8cd0d8f38a5bd7194d3e54be8ebdbca021b\classes.dex" />
     </item>
 
 </items>
