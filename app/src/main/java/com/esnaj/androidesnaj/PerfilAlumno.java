@@ -48,6 +48,11 @@ public class PerfilAlumno extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void modifica(View v){
+        Intent i = new Intent(PerfilAlumno.this, ModificaAlum.class);
+        startActivity(i);
+    }
+
     public void mensaje(String s){
         Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }

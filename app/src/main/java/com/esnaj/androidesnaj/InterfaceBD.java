@@ -23,11 +23,6 @@ public class InterfaceBD  {
         if(res.getCount() == 0){
             insertarDatosPrueba();;
         }
-
-        res = db.rawQuery("Select *  from maestros", null);
-        if(res.getCount() == 0){
-            insertarDatosPrueba();;
-        }
     }
 
     public void open() throws SQLiteException {
@@ -193,6 +188,14 @@ public class InterfaceBD  {
         open();
         String cadena = "Select idMaestro, contra from maestros where correo like '" + correo + "'";
         res = db.rawQuery(cadena, null);
+        return res;
+    }
+
+    public Cursor traerTodosA(){
+        Cursor res = null;
+        open();
+        String cad = "SELECT nombre, puntosTotales, escuela FROM alumnos";
+        res = db.rawQuery(cad, null);
         return res;
     }
 }
