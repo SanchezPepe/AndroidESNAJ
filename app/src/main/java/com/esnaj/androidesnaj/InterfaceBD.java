@@ -199,7 +199,7 @@ public class InterfaceBD  {
         return res;
     }
 
-    public int eliminaAl(int id) {
+    public int eliminaAl(long id) {
         int res = db.delete("alumnos", "_id = " + id, null);
         db.close();
         return res;

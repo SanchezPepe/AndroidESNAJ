@@ -10,81 +10,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.esnaj.androidesnaj.ModificaMaes">
 
+    <TextView
+        android:text="Seleccione el dato a modificar"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/grupoMa"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:text="Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbNombreM"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbCorreoM"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbContraseñaM"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:text=""
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/grupoMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTituloM"
+        android:gravity="center"/>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
+        android:id="@+id/fragmentosM"
+        android:layout_below="@+id/tvTituloM"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <LinearLayout
-            android:orientation="horizontal"
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:text="Regresar"
+            android:onClick="regresaM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1">
-
-            <TextView
-                android:text="Seleccione el dato que quiera modificar: "
-                android:layout_width="120dp"
-                android:layout_height="63dp"
-                android:id="@+id/textView3"
-                android:layout_weight="2.05" />
-
-            <RadioGroup
-                android:layout_width="201dp"
-                android:layout_height="182dp"
-                android:layout_weight="0.95"
-                android:id="@+id/grupoMa">
-
-                <RadioButton
-                    android:text="Nombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rbNombreM"
-                    android:layout_weight="1" />
-
-                <RadioButton
-                    android:text="Correo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rbCorreoM"
-                    android:layout_weight="1" />
-
-                <RadioButton
-                    android:text="Contraseña"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rbContraseñaM"
-                    android:layout_weight="1" />
-
-            </RadioGroup>
-
-        </LinearLayout>
-
-        <TextView
-            android:text=""
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvTituloM"
-            android:layout_weight="0.12" />
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="114dp"
-            android:layout_weight="0.76"
-            android:id="@+id/fragmentosM">
-
-        </RelativeLayout>
+            android:id="@+id/button5"
+            android:layout_margin="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:text="Modificar"
-            android:layout_width="275dp"
+            android:layout_margin="17dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button4"
-            android:elevation="0dp" />
+            android:layout_marginBottom="9dp" />
+    </RelativeLayout>
 
-    </LinearLayout>
+
 </RelativeLayout>

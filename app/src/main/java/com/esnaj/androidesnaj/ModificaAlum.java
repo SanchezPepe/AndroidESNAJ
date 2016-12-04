@@ -85,4 +85,8 @@ public class ModificaAlum extends AppCompatActivity implements BlankFragment.OnF
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+    public void regresa(View v){
+        finish();
+    }
 }

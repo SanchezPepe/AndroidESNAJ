@@ -3,9 +3,11 @@ package com.esnaj.androidesnaj;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -60,5 +62,9 @@ public class ModificaMaes extends AppCompatActivity implements BlankFragment.OnF
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    public void regresaM(View v){
+        finish();
     }
 }

@@ -15,23 +15,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:text=""
             android:ems="10"
             android:id="@+id/etCont1F" />
 
         <TextView
-            android:text="Confirmar Contraseña"
+            android:text="Confirmar Contraseña:"
+            android:textSize="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView4"
-            android:layout_weight="0.09"
-            android:gravity="bottom"/>
+            android:gravity="center"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:text=""
             android:ems="10"
-            android:id="@+id/etCont2F"
-            android:layout_weight="0.12" />
+            android:id="@+id/etCont2F" />
     </LinearLayout>
 </FrameLayout>

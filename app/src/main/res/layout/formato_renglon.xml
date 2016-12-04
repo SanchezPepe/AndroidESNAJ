@@ -3,21 +3,46 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/texto1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
-    <TextView
-        android:id="@+id/texto2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
-    <TextView
-        android:id="@+id/texto3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="H"
+            android:id="@+id/texto2"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="H"
+            android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="H"
+            android:id="@+id/texto4"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="H"
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
