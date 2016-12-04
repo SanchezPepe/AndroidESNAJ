@@ -47,7 +47,7 @@ public class fragmentoCategoria extends android.app.Fragment {
         spinnerArray.add("Anabella");
         spinnerArray.add("ReyESNAJ");
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getContext(), android.R.layout.simple_spinner_item, spinnerArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, spinnerArray);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner sItems = (Spinner)v.findViewById(R.id.spinFrac);
