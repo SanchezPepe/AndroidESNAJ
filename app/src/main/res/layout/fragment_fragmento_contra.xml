@@ -17,7 +17,7 @@
             android:inputType="textPassword"
             android:text=""
             android:ems="10"
-            android:id="@+id/etCont1F" />
+            android:id="@+id/etContraFrag" />
 
         <TextView
             android:text="Confirmar Contraseña:"
@@ -33,6 +33,6 @@
             android:inputType="textPassword"
             android:text=""
             android:ems="10"
-            android:id="@+id/etCont2F" />
+            android:id="@+id/etContraFrag2" />
     </LinearLayout>
 </FrameLayout>

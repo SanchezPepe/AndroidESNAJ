@@ -59,39 +59,46 @@ public class InterfaceBD  {
     }
 
     public void modificaAlumn(int i, String modf, int id){
-        ContentValues valores = null;
+        ContentValues valores = new ContentValues();
         open();
-        if(i == 1)
-            valores.put("nombre", modf);
-        else
-            if(i == 2)
+        switch (i) {
+            case 1:
+                valores.put("nombre", modf);
+                break;
+            case 2:
                 valores.put("correo", modf);
-            else
-                if(i == 3)
-                    valores.put("contra", modf);
-                else
-                    if (i == 4)
-                        valores.put("puntosTotales", modf);
-                    else
-                        if(i==5)
-                            valores.put("categoria", modf);
-                        else
-                            valores.put("escuela", modf);
+                break;
+            case 3:
+                valores.put("contra", modf);
+                break;
+            case 4:
+                valores.put("categoria", modf);
+                break;
+            case 5:
+                valores.put("puntosTotales", modf);
+                break;
+            case 6:
+                valores.put("escuela", modf);
+                break;
+        }
         db.update("alumnos", valores,"_id = "+ id, null);
         close();
     }
 
     public void modificaMaestr(int i, String modf, int idMaestros){
-        ContentValues valores = null;
+        ContentValues valores = new ContentValues();
         open();
-        if(i == 1)
-            valores.put("nombre", modf);
-            else
-                if(i == 2)
-                    valores.put("correo", modf);
-                else
-                    valores.put("contra", modf);
-        db.update("alumnos", valores,"_id = "+ idMaestros, null);
+        switch (i) {
+            case 1:
+                valores.put("nombre", modf);
+                break;
+            case 2:
+                valores.put("correo", modf);
+                break;
+            case 3:
+                valores.put("contra", modf);
+        }
+        db.update("maestros", valores,"_id = "+ idMaestros, null);
         close();
     }
 

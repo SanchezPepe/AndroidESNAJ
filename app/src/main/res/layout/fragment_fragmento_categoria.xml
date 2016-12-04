@@ -9,5 +9,5 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:id="@+id/spinFrac" />
+        android:id="@+id/spinFrag" />
 </FrameLayout>

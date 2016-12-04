@@ -122,7 +122,8 @@
             android:layout_margin="17dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button4"
+            android:id="@+id/button446"
+            android:onClick="modificaAl"
             android:layout_marginBottom="9dp" />
     </RelativeLayout>
 
