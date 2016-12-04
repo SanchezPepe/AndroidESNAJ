@@ -16,6 +16,7 @@ public class PerfilAlumno extends AppCompatActivity {
 
     TextView idA, nombreA, correoA, ptosTot, cat, escuela;
     InterfaceBD i;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class PerfilAlumno extends AppCompatActivity {
         cat = (TextView)findViewById(R.id.TVCat);
         escuela = (TextView)findViewById(R.id.TVEscuela);
 
-        Bundle bundle = this.getIntent().getExtras();
+        bundle = this.getIntent().getExtras();
         int cU = bundle.getInt("Clave");
         Cursor cursor = i.traerInfoAlumno(cU);
         cursor.moveToFirst();
@@ -44,16 +45,14 @@ public class PerfilAlumno extends AppCompatActivity {
 
     public void cerrarSesion(View v){
         Intent intent = new Intent(PerfilAlumno.this, MainActivity.class);
-        finish();
         startActivity(intent);
+        finish();
     }
 
     public void modifica(View v){
         Intent i = new Intent(PerfilAlumno.this, ModificaAlum.class);
+        i.putExtras(bundle);
+        finish();
         startActivity(i);
-    }
-
-    public void mensaje(String s){
-        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 }

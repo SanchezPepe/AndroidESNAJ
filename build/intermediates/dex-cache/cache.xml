@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="a9244ff222699534e35f085a1426b62f4bb0dfc4">
+        sha1="829a5ac0c8e2f129e087f84b19a550074382346d">
         <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_33c3877f3ab5b7f49a5b8a6f1fd88b8ce3fc15b1\classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="a82ce9ddccecb97607cfaf745db362977d9b6ab0">
+        sha1="21f7a9fabd1c2e6812d3f67c50c93746161354ed">
         <dex dex="C:\Users\Pepe\Desktop\GitHub\AndroidESNAJ\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7d347baf5b4c3a98ef6d2d832b7232bedb2fb829\classes.dex" />
     </item>
     <item

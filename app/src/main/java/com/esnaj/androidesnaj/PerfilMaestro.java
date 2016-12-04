@@ -11,6 +11,7 @@ public class PerfilMaestro extends AppCompatActivity {
 
     TextView id, nombre, correo;
     InterfaceBD i;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class PerfilMaestro extends AppCompatActivity {
         nombre = (TextView)findViewById(R.id.TVNom);
         correo = (TextView)findViewById(R.id.TVCorreo);
 
-        Bundle bundle = this.getIntent().getExtras();
+        bundle = this.getIntent().getExtras();
         int cU = bundle.getInt("Clave");
         Cursor cursor = i.traerInfoMaestro(cU);
         cursor.moveToFirst();
@@ -32,14 +33,16 @@ public class PerfilMaestro extends AppCompatActivity {
 
     }
 
-    public void cerrarSesion(View v){
+    public void cerrarSesionM(View v){
         Intent intent = new Intent(PerfilMaestro.this, MainActivity.class);
-        finish();
         startActivity(intent);
+        finish();
     }
 
-    public void modifica(View v){
+    public void modificaM(View v){
         Intent i = new Intent(PerfilMaestro.this, ModificaMaes.class);
+        i.putExtras(bundle);
+        finish();
         startActivity(i);
     }
 
