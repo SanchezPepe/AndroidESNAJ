@@ -24,7 +24,8 @@
         android:layout_height="match_parent"
         android:background="#ffffff"
         android:id="@+id/relativeL"
-        android:layout_below="@+id/TVAlumnosReg">
+        android:layout_below="@+id/TVAlumnosReg"
+        android:layout_above="@+id/linearLayout">
     </RelativeLayout>
 
     <LinearLayout
@@ -33,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
 
         <Button
             android:text="Regresar"

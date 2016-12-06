@@ -66,6 +66,7 @@
             android:weightSum="1"
             android:orientation="horizontal"
             android:gravity="center"
+            android:checkedButton="@+id/radioButton2"
             android:id="@+id/RGSelect">
 
 
@@ -86,7 +87,7 @@
         </RadioGroup>
 
         <Button
-            android:text="Login"
+            android:text="Iniciar Sesión"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
